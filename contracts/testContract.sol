@@ -4,7 +4,7 @@ contract testContract {
     address public father;
     address public mother;
 
-    mapping(address => mapping(uint256 => bool)) public isChild;
+    mapping(address => mapping(address => bool)) public isChild;
 
     function checkParentChild(address _child) public view returns (bool) {
         return isChild[father][_child] || isChild[mother][_child];
