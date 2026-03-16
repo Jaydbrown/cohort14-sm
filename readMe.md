@@ -1,4 +1,13 @@
-Dont you dare push to main!
+# Sample Hardhat Project
 
-##
-Initialize your hardhat and create any hardhat smart contract for yourself and write a test for it and then deploy it and verify it and then extract the API.
+This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+
+Try running some of the following tasks:
+
+```shell
+npx hardhat help
+npx hardhat test
+REPORT_GAS=true npx hardhat test
+npx hardhat node
+npx hardhat ignition deploy ./ignition/modules/Lock.ts
+```
